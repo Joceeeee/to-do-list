@@ -13,17 +13,17 @@ function onAddTaskClicked(event) {
     todoListContainer.insertAdjacentHTML('afterbegin', taskHTML);
 }
 
-function onTodolistContainerClicked(event){
-    var targetElement = event.toElement;
+function onTodoListContainerClicked(event){
+   // var targetElement = event.toElement;
     while (!targetElement.classList.contains("task"));
     targetElement = targetElement.parentElement;
 }
-    var checkbox = targetElement.querySelector(".checkbox")
+    var checkbox = targetElement.querySelector(".checkbox");
     if (checkbox.checked) {
-        target.Element.classList.add("completed");
+        targetElement.classList.add("completed");
     } else { 
-        target.Element.classList.remove("completed")
+        targetElement.classList.remove("completed")
     }
 // Step 3 Link to event handlers
 addTaskButton.addEventListener('click', onAddTaskClicked);
-todoListContainer.addEventListener('click', onTodolistContainerClicked);  
+todoListContainer.addEventListener('click', onTodoListContainerClicked);  
