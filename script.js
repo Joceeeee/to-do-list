@@ -1,9 +1,9 @@
 // Step 1 find the element
 var addTaskButton = document.getElementById("add-task");
 var newTaskInput = document.getElementById("task-input");
-var todoListContainer = document.getElementById("todo-list")
-var templateContainer = document.getElementById("list-item-template")
-var template = templateContainer.innerHTML
+var todoListContainer = document.getElementById("todo-list");
+var templateContainer = document.getElementById("list-item-template");
+var template = templateContainer.innerHTML;
 
 // Step 2 Write the behaviours
 function onAddTaskClicked(event) {
